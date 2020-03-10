@@ -47,7 +47,7 @@
    /* Texte original */
    .overlay-image .text {
     color: #fff;
-    font-size: 70px;
+    font-size: 30px;
     line-height: 1.5em;
     text-shadow: 2px 2px 2px #000;
     text-align: center;
@@ -73,3 +73,18 @@
         opacity: 1;
        }
 
+@media screen and (max-width:961px) {
+
+    .grid {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    img {
+        margin: 2em 1em;
+    }
+}
