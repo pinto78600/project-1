@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+.background {
+    background-image: url(https://i.ebayimg.com/images/g/utgAAOSwYmZXM0IJ/s-l1600.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
 .grid {
      display:grid;
      grid-template-columns: 1fr 1fr 1fr;
@@ -25,13 +32,6 @@
  .dot img {
     width: 100%;
  }
-
- /*.overlay {
-    vertical-align: middle;
-    display: table-cell;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0);
- }*/
 
  /* Conteneur principal */
 .overlay-image {
