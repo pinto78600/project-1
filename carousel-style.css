@@ -1,0 +1,8 @@
+#slideshow {
+    position: relative;
+    width: 80%;
+    height: 290px;
+    padding: 15px;
+    margin: 0 auto 2em;
+    border: 1px solid #010D0E;
+}
