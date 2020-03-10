@@ -1,0 +1,39 @@
+.monde{
+    background-image: url(http://www.atlas-monde.net/wp-content/uploads/2016/02/carte-monde.png);
+    width: 1050px;
+    height: 500px;
+    
+}      
+section{
+    height: 500px;
+}
+.statue{
+    width: 20%;
+    height: 20%;
+    margin-left:150px;
+    padding-top: 150px;
+    border-radius: 20%;
+
+}
+.rio{
+    width: 20%;
+    height: 20%;
+    padding-top: 100px;
+    margin-left: 140px;
+    border-radius: 20%;
+    
+}
+.sydney{
+    width: 20%;
+    height:20%;
+    float:right;
+    border-radius: 20%;
+}
+.russie{
+    width: 20%;
+    height: 20%;
+    float: right;
+    margin-right: 200px;
+    border-radius: 20%;
+    
+}
