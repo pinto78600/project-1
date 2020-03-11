@@ -17,6 +17,10 @@ h3 {
     text-transform: uppercase;
 }
 
+.adventure {
+    text-align: center;
+}
+
 .adventure p {
     text-align: left;
     margin: 0 2em;
@@ -26,7 +30,6 @@ h3 {
     width: 100%;
     box-shadow: 10px 5px 5px rgb(148, 147, 147);
     border-radius: 8px;
-    opacity: 1;
 }
 
 .presentation p {
@@ -40,11 +43,10 @@ h3 {
 }
 
 .background {
-    background-image: url(https://i.ebayimg.com/images/g/utgAAOSwYmZXM0IJ/s-l1600.jpg);
+    background-image: url(image/backgroundT.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
-    opacity: 0.9;
+    background-position: top;
 }
 
 .grid {
@@ -109,6 +111,23 @@ h3 {
         width: 40%;
         margin: 1.5em;
     }
+
+    input[type=checkbox] {
+        display: none;
+      }
+      
+      .myPicture img {
+        margin: 1em;
+        transition: transform 0.25s ease;
+        cursor: zoom-in;
+        width: 610px;
+        height: 433px;
+      }
+      
+      input[type=checkbox]:checked ~ label > img {
+        transform: scale(2);
+        cursor: zoom-out;
+      }
 
 @media screen and (max-width:961px) {
 
