@@ -14,38 +14,34 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    opacity: 0.8;
 }
 
 .grid {
      display:grid;
      grid-template-columns: 1fr 1fr 1fr;
-     margin: 5em;
+     margin: 3em;
      text-align: center;
  }
 
  .img-chemin img {
      width: 100%;
-     box-shadow: 20px 15px 15px rgb(214, 214, 214);
-     border-radius: 10px;
+     box-shadow: 10px 5px 5px rgb(148, 147, 147);
+     border-radius: 8px;
+     opacity: 1;
  }
 
  .dot img {
     width: 100%;
+    opacity: 1;
  }
 
- /* Conteneur principal */
+ /* Conteneur principal*/
 .overlay-image {
     position: relative;
     width: 100%;
    }
-   /* Image originale */
-   .overlay-image .image {
-    display: block;
-    width: 100%;
-    height: auto;
-   }
-   /* Texte original */
-   .overlay-image .text {
+.overlay-image .text {
     color: #fff;
     font-size: 30px;
     line-height: 1.5em;
@@ -85,6 +81,18 @@
     }
 
     img {
-        margin: 2em 1em;
+        margin: 0.5em 0;
+    }
+
+    .overlay-image .text {
+        font-size: 20px;
+    }
+
+    .background {
+        background-image: none;
+    }
+
+    .container {
+        width: 100%;
     }
 }
