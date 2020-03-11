@@ -4,19 +4,25 @@
 }
 
 h2 {
-    font-size: 70px;
-    text-transform: uppercase;
+    font-size: 75px;
+    margin: 0.5em;
+    font-family: 'Amatic SC', cursive;
+    color: #86A69D;
+    text-align: center;
+}
+
+h3 {
+    font-size: 60px;
     margin: 2em;
     margin-bottom: 0.5em;
     font-family: 'Amatic SC', cursive;
     color: #86A69D;
 }
 
-h3 {
+h4 {
     font-size: 40px;
     text-align: left;
     margin: 0.8em;
-    text-transform: uppercase;
     font-family: 'Amatic SC', cursive;
     color: #86A69D;
 }
@@ -83,7 +89,8 @@ p {
    }
 .overlay-image .text {
     color: #fff;
-    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
     line-height: 1.5em;
     text-shadow: 2px 2px 2px #000;
     text-align: center;
@@ -143,12 +150,12 @@ p {
 
 @media screen and (max-width:961px) {
 
-    h2 {
-        font-size: 30px;
+    h3 {
+        font-size: 50px;
     }
     
-    h3 {
-        font-size: large;
+    h4 {
+        font-size: 35px;
         text-align: left;
         margin: 2em;
         text-transform: uppercase;
@@ -175,7 +182,7 @@ p {
     }
 
     .overlay-image .text {
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .background {
