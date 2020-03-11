@@ -4,17 +4,25 @@
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 70px;
     text-transform: uppercase;
     margin: 2em;
     margin-bottom: 0.5em;
+    font-family: 'Amatic SC', cursive;
+    color: #86A69D;
 }
 
 h3 {
-    font-size: xx-large;
+    font-size: 40px;
     text-align: left;
     margin: 0.8em;
     text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    color: #86A69D;
+}
+
+p {
+    color: #A3ACB5;
 }
 
 .adventure {
@@ -29,7 +37,7 @@ h3 {
 .myPicture img {
     width: 100%;
     box-shadow: 10px 5px 5px rgb(148, 147, 147);
-    border-radius: 8px;
+    border-radius: 5%;
 }
 
 .presentation p {
@@ -52,9 +60,10 @@ h3 {
 .grid {
      display:grid;
      grid-template-columns: 1fr 1fr 1fr;
-     margin: 3em;
+     margin: 3em auto;
      text-align: center;
- }
+     width: 80%;
+}
 
  .img-chemin img {
      width: 100%;
@@ -65,7 +74,6 @@ h3 {
 
  .dot img {
     width: 100%;
-    opacity: 1;
  }
 
  /* Conteneur principal*/
@@ -112,7 +120,11 @@ h3 {
         margin: 1.5em;
     }
 
-    input[type=checkbox] {
+    hr {
+        color: rgb(148, 147, 147, 0.7);
+    }
+
+   /* input[type=checkbox] {
         display: none;
       }
       
@@ -127,7 +139,7 @@ h3 {
       input[type=checkbox]:checked ~ label > img {
         transform: scale(2);
         cursor: zoom-out;
-      }
+      }*/
 
 @media screen and (max-width:961px) {
 
