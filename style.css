@@ -3,6 +3,36 @@
     padding: 0;
 }
 
+h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: xx-large;
+    text-align: left;
+    margin: 0.8em;
+    text-transform: uppercase;
+}
+
+.adventure p {
+    text-align: left;
+    margin: 0 2em;
+}
+
+.myPicture img {
+    width: 100%;
+    box-shadow: 10px 5px 5px rgb(148, 147, 147);
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.presentation p {
+    text-align: center;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -14,7 +44,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .grid {
@@ -68,8 +98,30 @@
        .overlay-image:hover .hover {
         opacity: 1;
        }
+    
+    .myPicture {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .adventure img {
+        width: 40%;
+        margin: 1.5em;
+    }
 
 @media screen and (max-width:961px) {
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: large;
+        text-align: left;
+        margin: 2em;
+        text-transform: uppercase;
+    }
 
     .grid {
         display: flex;
@@ -82,6 +134,13 @@
 
     img {
         margin: 0.5em 0;
+    }
+    
+    .adventure img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
     }
 
     .overlay-image .text {
