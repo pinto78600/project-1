@@ -1,0 +1,96 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+/* header */
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;    
+    height: 2em;
+    position: fixed;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding: 0; 
+    background-color: black;
+    color: white;
+    padding-top: 5em;  
+}
+
+#active_lien{
+    background-color: lightgrey;
+    padding:0.5em;
+}
+
+/* body */
+
+main{
+    background-color: gray;
+    height: 40em;
+
+}
+
+#scroll_to_top { 
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+
+} 
+
+#scroll_to_top img { 
+    width: 25px; 
+}
+
+/* footer */
+
+footer {
+    background-color:black;
+    color: white;
+    height: 20rem;
+    
+}
+
+.link {
+    display:flex; 
+    justify-content:  space-around;
+}
+
+h2{
+    text-align:left;
+    margin:1em;
+}
+
+.nav_footer{
+    display:flex;
+    justify-content: space-around;
+    align-items;
+}
+
+.nav_footer li{
+    text-align: left;
+}
+
+
+footer li {
+    list-style: url('linkedin.png');
+    width: 20em;
+    list-style-position: inside;
+    margin-left: 1em;     
+}
+
+
+footer p {
+    text-align: center;
+    margin:3em;
+}
