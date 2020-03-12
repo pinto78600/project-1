@@ -3,23 +3,60 @@
    <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link  rel="stylesheet" href="form.css"> 
-        <title>Document</title>
+        <link rel="stylesheet"  href="form.css"> 
+        <link href="//fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet" >
+        <title>Rocket Raccoon</title>
     </head>
     <body >
         <div class="containeur"> 
-            <form action="">
-                <div class="contact" >
-                    <h1>Contact Us</h1>
-                    <div class="table"> 
-                        <div><input class="formulaire" type="email" placeholder="@"></div>
-                        <div> <input class="formulaire" type="text" placeholder="&#8962;"> </div>
-                        <div><textarea class="message" placeholder="Your message"></textarea></div>
-                        <div class="send"><input id="send"  type="submit" value="Send !" ></div>
+            <h2>Nous contacter</h2> 
+            <div class="contact" >
+                <div class="table"> 
+                    <form class="form-style-7">
+                    <ul>
+                        <li>
+                            <label for="sexe">Sexe</label>
+                            <select name="select">
+                                <option>Femme</option>
+                                <option>Homme</option>
+                                <span>Votre sexe</span>
+                            </select>
+                        </li>
+                        <li>   
+                            <label for="name">Nom</label>
+                            <input type="text" name="name" maxlength="100">
+                            <span>Entrez votre nom complet ici</span>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" maxlength="100">
+                            <span>Entrez votre adresse mail valide</span>
+                        </li>
+                        <li>
+                            <label for="subject">Objet</label>
+                            <input type="text" name="objet" maxlength="100">
+                            <span>Dites-nous tout</span>
+                        </li>
+                        <li>
+                            <label for="bio">Message</label>
+                            <textarea name="bio" onkeyup="adjust_textarea(this)"></textarea>
+                            <span>Ecrivez votre message ici</span>
+                        </li>
+                        <li>
+                            <input type="submit" value="Envoyer" >
+                        </li>
+                    </ul>
+                    </form> 
+                    <div class="sociaux">
+                        <a href="https://www.facebook.com" title="Facebook" target="_blank" class="logo"> <img src="https://icon-icons.com/icons2/1211/PNG/64/1491579586-yumminkysocialmedia21_83091.png" alt="facebook"> </a>
+                        <a href="https://www.instagram.com" title="instagram" target="_blank" class="logo" > <img src="https://icon-icons.com/icons2/1211/PNG/64/1491580635-yumminkysocialmedia26_83102.png" alt="instagram" ></a>
+                        <a href="https://www.twitter.com" title="twitter" target="_blank" class="logo" > <img src="https://icon-icons.com/icons2/840/PNG/64/Twitter_I_icon-icons.com_66909.png" alt="twitter" ></a>
+                        <a href="https:///www.snapchat.com" title="snapchat" target="_blank" class="logo" > <img src="https://icon-icons.com/icons2/840/PNG/64/Snapchat_icon-icons.com_66936.png" alt="snapchat" ></a>
+                        <a href="htpps://www.youtube.com" title="youtube" target="_blank" class="logo" > <img src="https://icon-icons.com/icons2/840/PNG/64/Youtube_I_icon-icons.com_66935.png" alt="youtube" ></a>
+
                     </div>
-                </div>   
-            </form>   
+                </div>
+            </div>   
         </div>
     </body>
 </html>
