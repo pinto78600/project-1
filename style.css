@@ -1,6 +1,103 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
+}
+
+/* header */
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #A3ACB5;    
+    height: 2em;
+    position: fixed;
+    width: 100%;
+    opacity: 0.5;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 30px;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: white;
+    text-decoration:none;
+}
+
+.navbar a:hover{
+    color: black;
+    text-decoration:underline;
+}
+
+.active_link{
+    color: black;
+}
+
+.big_title {
+    text-align: center;
+    background-color: #86A69D;
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 90px;
+    padding: 1em;
+}
+
+/* footer */
+
+footer {
+    background-color:#86A69D;
+    color: white;
+    height: 10%;
+    padding-bottom: 2em;
+    display:flex; 
+    justify-content:  space-around; 
+    font-family: "Amatic SC", sans-serif;
+    font-size: 25px;
+}
+
+footer li {
+    list-style: url('linkedin.png');
+    list-style-position: inside;
+    margin-left: 1em;
+}
+
+footer a{
+    color: white;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color: black;
+    text-decoration:underline;
+}
+
+.footer_title{
+    text-align:left;
+    margin:1em;
+    font-size: 30px;
+}
+
+.favorite_link{
+    display:flex;
+    justify-content: space-around;
+}
+
+.favorite_link li{
+    text-align: left;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;    
+}
+
+.copyright a, .copyright p{
+    text-align: center;
+    margin: 0.5em 0;
 }
 
 h2 {
@@ -130,6 +227,24 @@ p {
     }
 
 @media screen and (max-width:760px) {
+    
+    .navbar{
+        flex-wrap: wrap;
+    }
+
+    .navbar li{
+        width: 40%;
+        text-align: center;
+    }
+
+    .link{
+        flex-direction: column;
+    }
+
+    .me_suivre li{
+        padding-bottom: 2em;
+        text-align: center;
+    }
 
     h3 {
         font-size: 50px;
