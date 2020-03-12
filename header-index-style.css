@@ -11,11 +11,13 @@
     justify-content: space-around;
     align-items: center;
     background-color: #A3ACB5;    
-    height: 3em;
+    height: 2em;
     position: fixed;
     width: 100%;
     opacity: 0.5;
     font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 30px;
 }
 
 .navbar li{
@@ -30,6 +32,10 @@
 .navbar a:hover{
     color: black;
     text-decoration:underline;
+}
+
+.active_link{
+    color: black;
 }
 
 .big_title {
@@ -56,7 +62,9 @@ footer {
     height: 10%;
     padding-bottom: 2em;
     display:flex; 
-    justify-content:  space-around;   
+    justify-content:  space-around; 
+    font-family: "Amatic SC", sans-serif;
+    font-size: 25px;
 }
 
 footer li {
@@ -78,6 +86,7 @@ footer a:hover{
 .footer_title{
     text-align:left;
     margin:1em;
+    font-size: 30px;
 }
 
 .favorite_link{
