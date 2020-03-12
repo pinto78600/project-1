@@ -7,8 +7,9 @@ h2 {
     font-size: 75px;
     margin: 0.5em;
     font-family: 'Amatic SC', cursive;
-    color: #86A69D;
+    color: #FF968A;
     text-align: center;
+    font-weight: bold;
 }
 
 h3 {
@@ -16,7 +17,7 @@ h3 {
     margin: 2em;
     margin-bottom: 0.5em;
     font-family: 'Amatic SC', cursive;
-    color: #86A69D;
+    color: #FF968A;
 }
 
 h4 {
@@ -24,15 +25,12 @@ h4 {
     text-align: left;
     margin: 0.8em;
     font-family: 'Amatic SC', cursive;
-    color: #86A69D;
+    color: #FF968A;
 }
 
 p {
-    color: #A3ACB5;
-}
-
-.adventure {
-    text-align: center;
+    color: rgb(135, 140, 146);
+    font-size: 20px;
 }
 
 .adventure p {
@@ -46,7 +44,7 @@ p {
     border-radius: 5%;
 }
 
-.presentation p {
+.presentation p, .adventure {
     text-align: center;
 }
 
@@ -60,7 +58,7 @@ p {
     background-image: url(image/backgroundT.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: top;
+    background-position: center;
 }
 
 .grid {
@@ -101,7 +99,7 @@ p {
     width: 100%;
    }
 
-       /********* Hover image et texte *******/
+       /* Hover image et texte */
     /* Overlay */
     .overlay-image .hover {
         position: absolute;
@@ -131,24 +129,7 @@ p {
         color: rgb(148, 147, 147, 0.7);
     }
 
-   /* input[type=checkbox] {
-        display: none;
-      }
-      
-      .myPicture img {
-        margin: 1em;
-        transition: transform 0.25s ease;
-        cursor: zoom-in;
-        width: 610px;
-        height: 433px;
-      }
-      
-      input[type=checkbox]:checked ~ label > img {
-        transform: scale(2);
-        cursor: zoom-out;
-      }*/
-
-@media screen and (max-width:961px) {
+@media screen and (max-width:760px) {
 
     h3 {
         font-size: 50px;
@@ -174,7 +155,7 @@ p {
         margin: 0.5em 0;
     }
     
-    .adventure img {
+    img {
         display: flex;
         flex-direction: column;
         justify-content: center;
