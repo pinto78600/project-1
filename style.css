@@ -234,6 +234,41 @@ footer a:hover{
 
 @media screen and (max-width:760px) {
 
+    .navbar{
+        flex-wrap: wrap;
+        height: 2.5em;
+    }
+
+    .navbar li{
+        width: 40%;
+        text-align: center;
+    }
+
+    .link{
+        flex-direction: column;
+    }
+
+    .me_suivre li{
+        padding-bottom: 2em;
+        text-align: center;
+    }
+    .big_title{
+        padding-bottom: 0.5em;
+    }
+
+    .copyright a, .copyright p{
+        margin:0;
+    }
+
+    .footer_title{
+        margin:0.5em;
+
+    }
+
+    footer {
+        padding-bottom: 0em;
+    }
+
     h3 {
         font-size: 50px;
     }
