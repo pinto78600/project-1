@@ -1,8 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* header */
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #A3ACB5;    
+    height: 2em;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: white;
+    text-decoration:none;
+}
+
+.navbar a:hover{
+    color: black;
+    text-decoration:underline;
+}
+
+.active_link{
+    color: black;
+}
+
+.big_title {
+    text-align: center;
+    background-color: #86A69D;
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 90px;
+    padding: 1em;
+}
+
+
 h2 {
     font-size: 75px;
     font-family: "Amatic SC";
     text-align: center;
     color: #FA9F98;
+}
 
 h2 {
     text-align: center;
@@ -11,25 +64,6 @@ h2 {
     font-style: normal;
     color:#86A69D;
 
-}
-
-body {
-    background-image: url(https://images6.alphacoders.com/580/thumb-1920-580690.jpg);
-    background-size: cover;
-    margin: 0;
-}
-.boxshadow {
-    -webkit-box-shadow: 18px 18px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 18px 18px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 18px 18px 5px 0px rgba(0,0,0,0.75);}
-
-.background  {
-    background-repeat: no-repeat;
-    width: 100%;
-    margin: -8px;
-    background-color: rgb(255, 255, 255, 0.6);
-    background-size: cover;
-    padding-bottom: 2px;
 }
 
 
@@ -54,74 +88,76 @@ body {
     padding-left: 0%;
 }
 
-p {
+.bio {
     width: 30%;
     line-height: 31px;
     font-size: 16px;
     font-weight: bold;
     text-align: justify;
     width: 60%; 
-    
+    color: black;
 }
 img {
     border-radius: 10%;
 }
 .raccoon {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    /*justify-content: space-between;*/
     align-items: center;
-    width: 50vw;
+    margin: auto;
+    text-align: center;
+    width: 80%;
 }
 
-.prison img {
-    width: 300px;
-    height: 330px;
-    margin-right: 262px;
-    box-shadow: black;
-}
-.prison{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    width: 40vw;
-    text-align: right;
-}
-.textprison {
-    line-height: 31px;
+.raccoon p, .raccoonR p {
     text-align: justify;
+    width: 40%;
+}
+
+.raccoonR {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em auto;
+    text-align: center;
+    width: 80%;
+}
+
+.raccoonR img, .raccoonR img {
+    width: 400%;
+}
+
+.containerportfolioindex {
     width: 60%;
+    margin: auto;
+    text-align: center;
 }
 
+@media screen and (max-width:760px){
+    .containerportfolioindex {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
 
+    .raccoonR {
+        width: 100%;
+    }
 
-@media screen and (max-width:961px) {
+    .raccoon p, .raccoonR p {
+        text-align: justify;
+        width: 90%;
+    }
 
-    .container,
-    .container2 {
-        display: block;
-        flex-direction: column;
-        align-items: center; 
+    .raccoonR img, .raccoonR img {
+        display: none;
     }
-    
-    .prison img {
-        width: 300px; 
-        height: 330px; 
-        margin-right: -10px;
-        box-shadow: black;
-    }
-    .raccoon {
-        margin-bottom: 70px;
-        margin-left: 50px;
-    }
-    p {
-        margin-left: 40px;
-    }
-    .prisonraccoon {
-        margin-right: 100px;
-    }
+
 
 }
+
 
 
 
@@ -171,6 +207,10 @@ img {
     text-align: left;
 }
 
+#slideshow img {
+    border-radius: 0%;
+}
+
 .slider figure img { width: 20%; height: 310px; float: left; }
 
 .slider { width: 100%; max-width: 1000px; overflow: hidden; }
@@ -197,55 +237,6 @@ img {
   animation: 15s slider infinite;
 }
 
-* {
-    margin:0;
-    padding:0;
-}
-
-/* header */
-
-.navbar{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #A3ACB5;    
-    height: 2em;
-    position: fixed;
-    width: 100%;
-    opacity: 0.9;
-    font-weight: bold;
-    font-family: "Amatic SC", sans-serif;
-    font-size: 30px;
-    z-index: 100;
-}
-
-.navbar li{
-    list-style: none;
-}
-
-.navbar a{
-    color: white;
-    text-decoration:none;
-}
-
-.navbar a:hover{
-    color: black;
-    text-decoration:underline;
-}
-
-.active_link{
-    color: black;
-}
-
-.big_title {
-    text-align: center;
-    background-color: #86A69D;
-    color: white;
-    font-family: "Amatic SC", sans-serif;
-    font-size: 90px;
-    padding: 1em;
-}
-
 
 h2 {
     font-size: 75px;
@@ -258,12 +249,11 @@ h2 {
 
 h3 {
     font-size: 60px;
-<<<<<<< HEAD
     font-family: "Amatic SC";
     color: #FA9F98;
 }
 
-.container {
+.containerimg {
     border: ridge 2px black ;
     border-radius: 6px;
     text-align: center;
@@ -271,12 +261,12 @@ h3 {
     padding: 10px;
 }
 
-img {
+.effect {
     width: 40%;
     border-radius: 6px;
 }
 
-img:hover {
+.effect:hover {
     width: 40%;
     border-radius: 6px;
     -webkit-transform: scale(0.7);
@@ -285,18 +275,38 @@ img:hover {
 	transition: 1s ease-in-out;
 }
 
+
+
 @media only screen and (max-width: 600px) {
     #artice {
         display: flex;
+        flex-flow: column wrap;
+        width: 95%;
     }
+
+    .effect {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    p {
+        margin: auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+
 }
 
-=======
-    margin: 2em;
-    margin-bottom: 0.5em;
-    font-family: 'Amatic SC', cursive;
-    color: #FF968A;
-}
 
 h4 {
     font-size: 40px;
@@ -326,10 +336,9 @@ p {
     text-align: center;
 }
 
-.containerportfolio {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+.containerimg {
+    margin-top: 1.5em;
+    width: 70%;
 }
 
 .background {
@@ -598,6 +607,10 @@ footer a:hover{
 	
 
 @media screen and (max-width:760px) {
+    
+    #slideshow {
+        display: none;
+    }
 
     .navbar{
         flex-wrap: wrap;
@@ -676,15 +689,17 @@ footer a:hover{
     .container {
         width: 90%;
     }
-<<<<<<< HEAD
- 
- 
- 
-}
-=======
 
     .form-style-7 li > span{font-size: 25px;} ;
+
+    .containerimg {
+        width: 95%;
+    }
  
 }
->>>>>>> 4908080cd1124360a490ba24c81240f88315cdd0
->>>>>>> article
+
+.containerportfolio {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
