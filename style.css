@@ -1,3 +1,197 @@
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "amatic sc"; font-size: 40px;
+    font-style: normal;
+    color:#86A69D;
+
+}
+
+body {
+    background-image: url(https://images6.alphacoders.com/580/thumb-1920-580690.jpg);
+    background-size: cover;
+    margin: 0;
+}
+.boxshadow {
+    -webkit-box-shadow: 18px 18px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 18px 18px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 18px 18px 5px 0px rgba(0,0,0,0.75);}
+
+.background  {
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: -8px;
+    background-color: rgb(255, 255, 255, 0.6);
+    background-size: cover;
+    padding-bottom: 2px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: auto 20%;
+    width: 80%; 
+    margin-bottom: 10%;   
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto 14%;
+    width: 80%;
+    margin-bottom: 10%;
+    padding-left: 0%;
+    margin: auto 20%;
+    width: 80%;
+    margin-bottom: 10%;
+    padding-left: 0%;
+}
+
+p {
+    width: 30%;
+    line-height: 31px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: justify;
+    width: 60%; 
+    
+}
+img {
+    border-radius: 10%;
+}
+.raccoon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+}
+
+.prison img {
+    width: 300px;
+    height: 330px;
+    margin-right: 262px;
+    box-shadow: black;
+}
+.prison{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 40vw;
+    text-align: right;
+}
+.textprison {
+    line-height: 31px;
+    text-align: justify;
+    width: 60%;
+}
+
+
+
+@media screen and (max-width:961px) {
+
+    .container,
+    .container2 {
+        display: block;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .prison img {
+        width: 300px; 
+        height: 330px; 
+        margin-right: -10px;
+        box-shadow: black;
+    }
+    .raccoon {
+        margin-bottom: 70px;
+        margin-left: 50px;
+    }
+    p {
+        margin-left: 40px;
+    }
+    .prisonraccoon {
+        margin-right: 100px;
+    }
+
+}
+
+
+
+#slideshow {
+	position: relative;
+	width: 640px;
+	height: 310px;
+	padding: 15px;
+	margin: 0 auto 2em;
+	border: 1px solid #ddd;
+	background: #FFF;
+	/* CSS3 effects */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+}
+ 
+#slideshow:before,
+#slideshow:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+#slideshow:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+#slideshow:after {
+	right:0;
+	transform: rotate(4deg);
+}
+
+
+
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0px;
+    font-size: 0;
+    text-align: left;
+}
+
+.slider figure img { width: 20%; height: 310px; float: left; }
+
+.slider { width: 100%; max-width: 1000px; overflow: hidden; }
+
+@keyframes slider {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 15s slider infinite;
+}
+
 * {
     margin:0;
     padding:0;
