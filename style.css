@@ -1,3 +1,8 @@
+h2 {
+    font-size: 75px;
+    font-family: "Amatic SC";
+    text-align: center;
+    color: #FA9F98;
 
 h2 {
     text-align: center;
@@ -207,7 +212,7 @@ img {
     height: 2em;
     position: fixed;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.9;
     font-weight: bold;
     font-family: "Amatic SC", sans-serif;
     font-size: 30px;
@@ -244,7 +249,7 @@ img {
 
 h2 {
     font-size: 75px;
-    margin: 0.5em;
+    /*margin: 0.5em;*/
     font-family: 'Amatic SC', cursive;
     color: #FF968A;
     text-align: center;
@@ -253,6 +258,40 @@ h2 {
 
 h3 {
     font-size: 60px;
+<<<<<<< HEAD
+    font-family: "Amatic SC";
+    color: #FA9F98;
+}
+
+.container {
+    border: ridge 2px black ;
+    border-radius: 6px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+img {
+    width: 40%;
+    border-radius: 6px;
+}
+
+img:hover {
+    width: 40%;
+    border-radius: 6px;
+    -webkit-transform: scale(0.7);
+	transform: scale(0.7);
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    #artice {
+        display: flex;
+    }
+}
+
+=======
     margin: 2em;
     margin-bottom: 0.5em;
     font-family: 'Amatic SC', cursive;
@@ -287,7 +326,7 @@ p {
     text-align: center;
 }
 
-.container {
+.containerportfolio {
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -426,6 +465,138 @@ footer a:hover{
     color: black;
 }
 
+.table{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-color: black;
+    border:solid 5px;
+    border-radius: 10%;
+    background-color:#A3ACB5;
+    opacity:0.8;
+    width: 70%; 
+}
+
+.backform {
+	background-image: url(https://images.pexels.com/photos/569098/pexels-photo-569098.jpeg?cs=srgb&dl=analogique-appareil-photo-classique-concentrer-569098.jpg&fm=jpg);
+    background-repeat: no-repeat;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*padding: 70px;*/
+}
+
+.containeurform{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(255,255,255,0.6);
+}
+
+.form-style-7 ul{
+	list-style:none;
+	padding:50px;
+	margin:0;	
+}
+
+.form-style-7 :first-child{
+	text-align: center;
+}
+
+
+.form-style-7 li:last-child{
+	border:none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.form-style-7 li > label{
+	display: block;
+	float: left;
+	margin-top: -10px;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	font-size: 16px;
+	overflow: hidden;
+	
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 20px;
+	padding: 0;
+}
+
+.form-style-7 li{
+	display: block;
+	padding: 9px;
+	border:1px solid #DDDDDD;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+
+.form-style-7 textarea{
+    height: 150px;
+    resize:none;
+}
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"]{
+	background:grey;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	font-size: 20px;	
+	border-radius: 3px;
+	color:whitesmoke;
+}
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="button"]:hover{
+	background:#FA9F98;
+	color:black;
+}
+
+.sociaux{
+	display: flex;
+	justify-content: space-evenly;
+	width: 70%;
+	margin:auto;
+	padding: 20px; 
+}
+
+.logo{transition:0.5s;}
+.logo:hover{transform : scale(1.2);}
+
+.form-style-7 li > span{
+	background:black;
+	display: block;
+    opacity: 0.6;
+    padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: #C0C0C0;
+	font-size: 15px;
+}
+	
+
 @media screen and (max-width:760px) {
 
     .navbar{
@@ -505,7 +676,15 @@ footer a:hover{
     .container {
         width: 90%;
     }
+<<<<<<< HEAD
  
  
  
 }
+=======
+
+    .form-style-7 li > span{font-size: 25px;} ;
+ 
+}
+>>>>>>> 4908080cd1124360a490ba24c81240f88315cdd0
+>>>>>>> article
