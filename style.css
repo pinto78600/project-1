@@ -315,3 +315,157 @@ footer a:hover{
  
  
 }
+
+}
+.table{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-color: black;
+    border:solid 5px;
+    border-radius: 10%;
+    background-color:#A3ACB5;
+    opacity:0.7 ;
+    width: 70%;
+    
+    
+   
+}
+body {
+	background-image: url(https://images.pexels.com/photos/569098/pexels-photo-569098.jpeg?cs=srgb&dl=analogique-appareil-photo-classique-concentrer-569098.jpg&fm=jpg);
+	background-repeat: no-repeat;
+    
+}
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px;
+    
+    
+}
+h2{
+    text-align: center;
+    padding: 0;
+	font-family: "Amatic SC";
+	color: FA9F98; 
+    
+    font-size: 75px;
+​
+​
+​
+​
+}
+.containeur{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(255,255,255,0.6);
+​
+}
+​
+.form-style-7 h1{
+	
+}
+.form-style-7 ul{
+	list-style:none;
+	padding:50px;
+	margin:0;	
+}
+.form-style-7 :first-child{
+	text-align: center;
+	
+}
+​
+.form-style-7 li{
+	display: block;
+	padding: 9px;
+	border:1px solid #DDDDDD;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+.form-style-7 li:last-child{
+	border:none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.form-style-7 li > label{
+	display: block;
+	float: left;
+	margin-top: -19px;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	font-size: 16px;
+	overflow: hidden;
+	
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 20px;
+	padding: 0;
+​
+​
+}
+.form-style-7 li > span{
+	background:black;
+	display: block;
+    opacity: 0.6;
+    padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: #C0C0C0;
+	font-size: 15px;
+}
+.form-style-7 textarea{
+    height: 150px;
+    resize:none;
+}
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"]{
+	background:grey;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	font-size: 20px;	
+	border-radius: 3px;
+	color:whitesmoke;
+}
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="button"]:hover{
+	background:#FA9F98;
+	color:black;
+	
+}
+.sociaux{
+	display: flex;
+	justify-content: space-evenly;
+	width: 70%;
+	margin:auto;
+	padding: 20px; 
+​
+}
+.logo{transition:0.5s;}
+.logo:hover{transform : scale(1.2);}
+​
+​
+@media screen and (max-width:760px){
+	.form-style-7 li > span{font-size: 25px;} ;
+}	
