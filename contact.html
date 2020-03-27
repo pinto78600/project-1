@@ -8,11 +8,13 @@
         <meta name="description" content="La galerie photo de Roquet Raccoon">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"/>
+    
     </head>
     <body>
+        <div class="cursor"></div>
         <header>
             <nav>
-                <ul class="navbar">
+                <ul class="nav-links">
                     <li><a href="index.html">A propos</a></li>
                     <li> <a href="portfolio.html">Portfolio</a></li>
                     <li><a href="article.html">Article</a></li>
@@ -22,6 +24,7 @@
           <h1 class="big_title">Roquet Raccoon</h1>
         </header>
         <main>
+            <div id="str"></div>
             <div class="containeurform backform"> 
                 <h2>Nous contacter</h2> 
                 <div class="contact" >
@@ -56,9 +59,6 @@
                                 <textarea name="bio" onkeyup="adjust_textarea(this)"></textarea>
                                 <span>Ecrivez votre message ici</span>
                             </li>
-                            <li>
-                                <input type="submit" value="Envoyer" >
-                            </li>
                         </ul>
                         </form> 
                         <div class="sociaux">
@@ -76,34 +76,65 @@
     </body>
     <footer class="link">
         <div>
-            <h2 class="footer_title">Lien préféré</h2>  
-            <nav class="favorite_link">
-                <ul>
+
+            <h2 class="footer_title">Liens préférés</h2>  
+
+            <nav class="favorite_links">
+
+                <ul class="footer-links" >
                     <li><a href="https://www.linkedin.com/in/varapone-gaire-5029b819b/" target="_blank">Varapone</a></li>
                     <li><a href="https://openclassrooms.com" target="_blank">Antoine</a></li>
                     <li><a href="https://openclassrooms.com" target="_blank">Jules</a></li>
                 </ul>
-                <ul>
+
+                <ul class="footer-links" >
                     <li><a href="https://openclassrooms.com" target="_blank">Stephane</a></li>
                     <li><a href="https://www.linkedin.com/in/audrey-ritzenthaler-5b617a123/" target="_blank">Audrey</a></li>
                     <li><a href="https://openclassrooms.com" target="_blank">Mohamed</a></li>
                 </ul>
+
             </nav>
+
         </div>
         <div class="copyright">
-          <h2 class="footer_title">Copyright</h2>
-            <a href="https://openclassrooms.com" target="_blank">@[btz]gylgyl2000</a>
-            <p>Tous droits réservés</p>
-          <a href="https://openclassrooms.com" target="_blank">[Mentions légales]</a>
+            <h2 class="footer_title">Copyright</h2>
+              <ul class="footer-links">
+                  <li><a href="https://openclassrooms.com" target="_blank">@[btz]gylgyl2000</a></li>
+              </ul>
+              <p>Tous droits réservés</p>
+              <ul class="footer-links" >
+                  <li><a href="https://openclassrooms.com" target="_blank">[Mentions légales]</a></li>
+              </ul>
         </div>
+        <div> 
+
+       
+
         <div>
+
             <h2 class="footer_title">Me suivre</h2>
+
             <nav>  
-                <ul class="me_suivre">
-                    <li><a href="https://openclassrooms.com" target="_blank">Roquet Raccoon</a></li>
+                <ul class="footer-links">
+                    
+                    <li class="mon_lien" ><a  href="https://openclassrooms.com" target="_blank">Roquet Raccoon</a></li>
+                
                 </ul>
             </nav> 
-        </div>               
+
+        </div>                
+
     </footer>
+    <script>
+        let string = "Merci de votre visite sur notre site! Veuillez remplir notre formulaire de contact pour qu'on puisse partage notre amour pour la photographie";
+let str = string.split("");
+let el = document.getElementById('str');
+(function animate() {
+str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
+var running = setTimeout(animate, 90);
+})();cxl
+
+    </script>
+    <script src="anim.js"></script>
 </body>
 </html>
